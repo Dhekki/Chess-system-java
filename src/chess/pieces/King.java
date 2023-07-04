@@ -23,10 +23,7 @@ public class King extends ChessPiece {
 
         for (int i = -1; i < 2; i++) {
             for (int j = -1; j < 2; j++) {
-                p.setValue(0, 0);
-                if (i == 0 && j == 0) {
-                    continue;
-                }
+                if (i == 0 && j == 0) continue;
 
                 p.setValue(position.getRow() + i, position.getColumn() + j);
 
